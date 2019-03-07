@@ -1,0 +1,64 @@
+<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="row text-center">
+        <div class="col-sm-6 col-sm-offset-3">
+        <br><br> <h2 style="color:#0fad00">Success</h2>
+        
+        <p style="font-size:20px;color:#5C5C5C;">Thank you for Your login & You only access these site</p>
+     <!----  <p id="demo" onclick="myFunction()">hello</p> !-->
+
+     <ul>
+     
+        <% for(var i=0; i< access.length; i++) {%>
+           
+    
+            <li> <a href=http://localhost:8080<%=access[i]%>> http://localhost:8080<%= access[i]%></a></li> 
+              
+            
+         <% } %>
+
+
+        
+        </ul>
+
+    <br><br>
+        </div>
+      
+      
+        <a href="/logout" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-log-out"></span> Log out
+        </a>
+      
+      
+        
+	</div>
+</div>
+<!-- 
+<script>
+function myFunction(){
+var url="http://localhost:7070/data";
+//var u = document.getElementById("sajib").href;
+var data={
+    first:"hello",
+    second:"kk"
+};
+fetch(url,{
+    method:'POST',
+    body:JSON.stringify(data),
+    headers:{
+        'Content-Type':'application/json'
+    }
+}).then(function(res){
+res.json();
+}).then(function(response){
+window.location.href= "http://stackoverflow.com";
+})
+
+}
+
+
+</script> -->

@@ -1,0 +1,20 @@
+{
+  "name": "logon-nodeapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "*",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.15",
+    "nodemon": "^1.18.10",
+    "path": "^0.12.7"
+  }
+}
